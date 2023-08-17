@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-11 21:51:50.661779",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nozzle_description",
+  "nozzle_sizedn",
+  "rating",
+  "valve_type",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "nozzle_description",
+   "fieldtype": "Data",
+   "label": "Nozzle Description"
+  },
+  {
+   "fieldname": "nozzle_sizedn",
+   "fieldtype": "Data",
+   "label": "Nozzle Size(DN)"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Data",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "valve_type",
+   "fieldtype": "Data",
+   "label": "Valve Type"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-11 21:51:50.661779",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Tank Inspection Checklist Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,175 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Cooler Inspection-{title}-{####}",
+ "creation": "2023-08-11 21:52:52.276442",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "location",
+  "won",
+  "rev",
+  "column_break_4",
+  "date",
+  "fwopiping",
+  "fwostructural",
+  "coller_inspection_section",
+  "equipment_no",
+  "description",
+  "scaffolding_required",
+  "detailed_scope_and_sequences_of_work",
+  "data_12",
+  "equipment_no2",
+  "description2",
+  "detailed_workscope",
+  "opm_scope_of_work_section",
+  "brn",
+  "equipment_no3",
+  "description3",
+  "section_break_20",
+  "note"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "Won",
+   "options": "Project"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "REV"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "fwopiping",
+   "fieldtype": "Data",
+   "label": "FWO(Piping)"
+  },
+  {
+   "fieldname": "fwostructural",
+   "fieldtype": "Data",
+   "label": "FWO(Structural)"
+  },
+  {
+   "fieldname": "coller_inspection_section",
+   "fieldtype": "Section Break",
+   "label": "Cooler Inspection"
+  },
+  {
+   "fieldname": "equipment_no",
+   "fieldtype": "Data",
+   "label": "Equipment No."
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "scaffolding_required",
+   "fieldtype": "Select",
+   "label": "Scaffolding Required",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "detailed_scope_and_sequences_of_work",
+   "fieldtype": "Long Text",
+   "label": "Detailed Scope And Sequences Of Work"
+  },
+  {
+   "fieldname": "data_12",
+   "fieldtype": "Section Break",
+   "label": "Additional Workscope During Cooler Inspection"
+  },
+  {
+   "fieldname": "equipment_no2",
+   "fieldtype": "Data",
+   "label": "Equipment No"
+  },
+  {
+   "fieldname": "description2",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "detailed_workscope",
+   "fieldtype": "Long Text",
+   "label": "Detailed Scope And Sequences Of Work"
+  },
+  {
+   "fieldname": "opm_scope_of_work_section",
+   "fieldtype": "Section Break",
+   "label": "OPM Scope Of Work"
+  },
+  {
+   "fieldname": "brn",
+   "fieldtype": "Data",
+   "label": "BRN"
+  },
+  {
+   "fieldname": "equipment_no3",
+   "fieldtype": "Data",
+   "label": "Equipment No."
+  },
+  {
+   "fieldname": "description3",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "note",
+   "fieldtype": "Small Text",
+   "label": "Note"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-11 21:52:52.276442",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Cooler Inspection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

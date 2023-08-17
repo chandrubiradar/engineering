@@ -1,0 +1,306 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:Design Tracker-{won}-{####}",
+ "creation": "2023-08-11 21:17:30.060304",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "floating_nw",
+  "area",
+  "column_break_2",
+  "fn_description",
+  "contract",
+  "column_break_4",
+  "won",
+  "section_break_6",
+  "execution_start_date",
+  "site_visit",
+  "develop_workpack",
+  "review_by_qaqc",
+  "column_break_8",
+  "execution_finish_date",
+  "issr_submission",
+  "review_by_checker",
+  "approval_and_submission_to_bsp",
+  "sap_extractattachments_section",
+  "cirras",
+  "cirass_attach",
+  "tsm_drawing",
+  "tsm_drawing1",
+  "section_break_22",
+  "pefsuefs",
+  "pefs_attach",
+  "short_text",
+  "long_text",
+  "column_break_28",
+  "plot_plan",
+  "plot_attach",
+  "vendor_drawing",
+  "vendor_attach",
+  "wpok",
+  "column_break_34",
+  "equipment_data_sheet",
+  "equipment_attach",
+  "mto",
+  "mto_attach",
+  "section_break_28",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "floating_nw",
+   "fieldtype": "Link",
+   "label": "Floating NW",
+   "options": "Mashhor Campaign"
+  },
+  {
+   "fetch_from": "floating_nw.area_name",
+   "fieldname": "area",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Area"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fn_description",
+   "fieldtype": "Data",
+   "label": "FN Description"
+  },
+  {
+   "fetch_from": "floating_nw.contract",
+   "fieldname": "contract",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Contract",
+   "options": "Contract"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON No.",
+   "options": "Project"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "execution_start_date",
+   "fieldtype": "Date",
+   "label": "Execution Start Date"
+  },
+  {
+   "fieldname": "site_visit",
+   "fieldtype": "Date",
+   "label": "Site Visit"
+  },
+  {
+   "fieldname": "develop_workpack",
+   "fieldtype": "Date",
+   "label": "Develop Workpack"
+  },
+  {
+   "fieldname": "review_by_qaqc",
+   "fieldtype": "Date",
+   "label": "Review By QAQC"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "execution_finish_date",
+   "fieldtype": "Date",
+   "label": "Execution Finish Date"
+  },
+  {
+   "fieldname": "issr_submission",
+   "fieldtype": "Date",
+   "label": "ISSR Submission"
+  },
+  {
+   "fieldname": "review_by_checker",
+   "fieldtype": "Date",
+   "label": "Review By Checker"
+  },
+  {
+   "fieldname": "approval_and_submission_to_bsp",
+   "fieldtype": "Date",
+   "label": "Approval and Submission to BSP"
+  },
+  {
+   "fieldname": "sap_extractattachments_section",
+   "fieldtype": "Section Break",
+   "label": "SAP Extract/Attachments"
+  },
+  {
+   "fieldname": "cirras",
+   "fieldtype": "Select",
+   "label": "CIRRAS",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "depends_on": "eval:doc.cirras == 'Yes'",
+   "fieldname": "cirass_attach",
+   "fieldtype": "Attach",
+   "label": "CIRASS Attach"
+  },
+  {
+   "fieldname": "tsm_drawing",
+   "fieldtype": "Select",
+   "label": "TSM Drawing",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "depends_on": "eval:doc.tsm_drawing == 'Yes'",
+   "fieldname": "tsm_drawing1",
+   "fieldtype": "Attach",
+   "label": "TSM Drawing"
+  },
+  {
+   "fieldname": "section_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "pefsuefs",
+   "fieldtype": "Select",
+   "label": "PEFS/UEFS",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "depends_on": "eval:doc.pefsuefs == 'Yes'",
+   "fieldname": "pefs_attach",
+   "fieldtype": "Attach",
+   "label": "PEFS Attach"
+  },
+  {
+   "fieldname": "short_text",
+   "fieldtype": "Select",
+   "label": "Short Text ",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "fieldname": "long_text",
+   "fieldtype": "Select",
+   "label": "Long Text",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "plot_plan",
+   "fieldtype": "Select",
+   "label": "Plot Plan",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "depends_on": "eval:doc.plot_plan == 'Yes'",
+   "fieldname": "plot_attach",
+   "fieldtype": "Attach",
+   "label": "Plot Attach",
+   "mandatory_depends_on": "eval:doc.plot_plan == 'Yes'"
+  },
+  {
+   "fieldname": "vendor_drawing",
+   "fieldtype": "Select",
+   "label": "Vendor Drawing",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "depends_on": "eval:doc.vendor_drawing == 'Yes'",
+   "fieldname": "vendor_attach",
+   "fieldtype": "Attach",
+   "label": "Vendor Attach",
+   "mandatory_depends_on": "eval:doc.vendor_drawing == 'Yes'"
+  },
+  {
+   "fieldname": "wpok",
+   "fieldtype": "Select",
+   "label": "WPOK",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equipment_data_sheet",
+   "fieldtype": "Select",
+   "label": "Equipment Data Sheet",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "depends_on": "eval:doc.equipment_data_sheet == 'Yes'",
+   "fieldname": "equipment_attach",
+   "fieldtype": "Attach",
+   "label": "Equipment Attach",
+   "mandatory_depends_on": "eval:doc.equipment_data_sheet == 'Yes'"
+  },
+  {
+   "fieldname": "mto",
+   "fieldtype": "Select",
+   "label": "MTO",
+   "options": "\nYes\nNo\nNot Required"
+  },
+  {
+   "depends_on": "eval:doc.mto == 'Yes'",
+   "fieldname": "mto_attach",
+   "fieldtype": "Attach",
+   "label": "MTO Attach",
+   "mandatory_depends_on": "eval:doc.mto == 'Yes'"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Design Tracker",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-11 21:17:30.060304",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Design Tracker",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

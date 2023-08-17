@@ -1,0 +1,200 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TIWDC-{title}-{####}",
+ "creation": "2023-08-11 21:53:32.725703",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "location",
+  "won",
+  "column_break_3",
+  "tank",
+  "date",
+  "section_break_6",
+  "general_conditionexternal",
+  "name1",
+  "discussion_with_operation",
+  "section_break_10",
+  "rv_data",
+  "type",
+  "size",
+  "uno",
+  "orifice",
+  "column_break_18",
+  "set_pressure",
+  "spring",
+  "information_obtained_from",
+  "size2",
+  "opm1",
+  "tank_trim_section",
+  "table_23",
+  "section_break_24",
+  "prepared_by",
+  "column_break_26",
+  "lcms"
+ ],
+ "fields": [
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tank",
+   "fieldtype": "Data",
+   "label": "Tank"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "general_conditionexternal",
+   "fieldtype": "Small Text",
+   "label": "General Condition(External)"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "discussion_with_operation",
+   "fieldtype": "Small Text",
+   "label": "Discussion With Operation "
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rv_data",
+   "fieldtype": "Data",
+   "label": "RV Data"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "label": "Type"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "uno",
+   "fieldtype": "Data",
+   "label": "UNO"
+  },
+  {
+   "fieldname": "orifice",
+   "fieldtype": "Data",
+   "label": "ORIFICE"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "set_pressure",
+   "fieldtype": "Data",
+   "label": "Set Pressure"
+  },
+  {
+   "fieldname": "spring",
+   "fieldtype": "Data",
+   "label": "Spring"
+  },
+  {
+   "fieldname": "information_obtained_from",
+   "fieldtype": "Data",
+   "label": "Information Obtained From"
+  },
+  {
+   "fieldname": "size2",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "opm1",
+   "fieldtype": "Data",
+   "label": "OPM/1"
+  },
+  {
+   "fieldname": "tank_trim_section",
+   "fieldtype": "Section Break",
+   "label": "Tank Trim"
+  },
+  {
+   "fieldname": "table_23",
+   "fieldtype": "Table",
+   "options": "Tank Inspection Checklist Table"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Data",
+   "label": "Prepared By"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lcms",
+   "fieldtype": "Data",
+   "label": "LCMS"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-14 20:42:16.120880",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Tank Inspection Workpack Development Checklist Mechanical",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

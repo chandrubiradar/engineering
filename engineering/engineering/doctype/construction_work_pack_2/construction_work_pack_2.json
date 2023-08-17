@@ -1,0 +1,286 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{title}-{####}",
+ "creation": "2023-08-11 22:15:36.637994",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "attachments",
+  "detailed_scope_and_sequences",
+  "fwo_assembly",
+  "qc_inspection_checklist",
+  "mto_sap_input",
+  "material_requisition",
+  "anomalies_report__photos_sap_extractlsciemail",
+  "bolt_torquing_checklist",
+  "markedup_electrical",
+  "plot_plan__piping_ga_hac_drawing",
+  "general_notes_for_isometrics_afc_isometric_dwg_std_dwg_sketch",
+  "isolation_requirement_sheets",
+  "equipment__instrument_nameplate_details",
+  "equipment_datasheet__vendor_dwg",
+  "mechanical_survey_checklist",
+  "execution_of_manhours_section",
+  "title",
+  "execution_of_manhours",
+  "estimate",
+  "actual",
+  "ie_no_of_pax_x_productive_75_x_duration",
+  "requirement_note_a",
+  "1_painting_blasting_bsp_12s600",
+  "data_23",
+  "data_24",
+  "data_25",
+  "data_26",
+  "data_27",
+  "section_break_28",
+  "approved_by",
+  "column_break_30",
+  "verify_by_asset",
+  "section_break_32",
+  "table_33",
+  "remarkscomments",
+  "section_break_35",
+  "indicator",
+  "date",
+  "signature"
+ ],
+ "fields": [
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Section Break",
+   "label": "Attachments:"
+  },
+  {
+   "default": "0",
+   "fieldname": "detailed_scope_and_sequences",
+   "fieldtype": "Data",
+   "label": "DETAILED SCOPE AND SEQUENCES OF WORK/ OAI REPORT/ EMAIL(STENCIL INFO)"
+  },
+  {
+   "default": "0",
+   "fieldname": "fwo_assembly",
+   "fieldtype": "Data",
+   "label": "FWO/ ASSEMBLY LIST"
+  },
+  {
+   "default": "0",
+   "fieldname": "qc_inspection_checklist",
+   "fieldtype": "Data",
+   "label": "QC INSPECTION REQUIREMENT CHECKLIST"
+  },
+  {
+   "default": "0",
+   "fieldname": "mto_sap_input",
+   "fieldtype": "Data",
+   "label": "MTO LIST / SAP INPUT"
+  },
+  {
+   "default": "0",
+   "fieldname": "material_requisition",
+   "fieldtype": "Data",
+   "label": "MATERIAL REQUISITION"
+  },
+  {
+   "default": "0",
+   "fieldname": "anomalies_report__photos_sap_extractlsciemail",
+   "fieldtype": "Data",
+   "label": "ANOMALIES REPORT / PHOTO(s)/ SAP EXTRACT/LSCI/EMAIL"
+  },
+  {
+   "default": "0",
+   "fieldname": "bolt_torquing_checklist",
+   "fieldtype": "Data",
+   "label": "BOLT TORQUING CHECKLIST"
+  },
+  {
+   "default": "0",
+   "fieldname": "markedup_electrical",
+   "fieldtype": "Data",
+   "label": "MARKED-UP ELECTRICAL DWG/PEFS/UEFS"
+  },
+  {
+   "default": "0",
+   "fieldname": "plot_plan__piping_ga_hac_drawing",
+   "fieldtype": "Data",
+   "label": "PLOT PLAN / PIPING G.A/ H.A.C DRAWING"
+  },
+  {
+   "default": "0",
+   "fieldname": "general_notes_for_isometrics_afc_isometric_dwg_std_dwg_sketch",
+   "fieldtype": "Data",
+   "label": "GENERAL NOTES FOR ISOMETRICS/ AFC ISOMETRIC DWG/ STD DWG/ SKETCH"
+  },
+  {
+   "default": "0",
+   "fieldname": "isolation_requirement_sheets",
+   "fieldtype": "Data",
+   "label": "ISOLATION REQUIREMENT SHEETS"
+  },
+  {
+   "default": "0",
+   "fieldname": "equipment__instrument_nameplate_details",
+   "fieldtype": "Data",
+   "label": "EQUIPMENT / INSTRUMENT NAMEPLATE DETAILS"
+  },
+  {
+   "default": "0",
+   "fieldname": "equipment_datasheet__vendor_dwg",
+   "fieldtype": "Data",
+   "label": "EQUIPMENT DATASHEET / VENDOR DWG"
+  },
+  {
+   "default": "0",
+   "fieldname": "mechanical_survey_checklist",
+   "fieldtype": "Data",
+   "label": "MECHANICAL SURVEY CHECKLIST"
+  },
+  {
+   "fieldname": "execution_of_manhours_section",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "execution_of_manhours",
+   "fieldtype": "Heading",
+   "label": "EXECUTION OF MANHOURS"
+  },
+  {
+   "fieldname": "estimate",
+   "fieldtype": "Float",
+   "label": "ESTIMATE"
+  },
+  {
+   "fieldname": "actual",
+   "fieldtype": "Float",
+   "label": "ACTUAL"
+  },
+  {
+   "fieldname": "ie_no_of_pax_x_productive_75_x_duration",
+   "fieldtype": "Data",
+   "label": "(i.e. No. of pax X Productive 7.5 X Duration)"
+  },
+  {
+   "fieldname": "requirement_note_a",
+   "fieldtype": "Heading",
+   "label": "REQUIREMENT (NOTE-A):"
+  },
+  {
+   "default": "0",
+   "fieldname": "1_painting_blasting_bsp_12s600",
+   "fieldtype": "Check",
+   "label": "1) Painting/ Blasting (BSP_12.S.600)"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_23",
+   "fieldtype": "Check",
+   "label": "2) Welding/ NDT (BSP-12.S.601)"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_24",
+   "fieldtype": "Check",
+   "label": "3) Hydro test Waiver (BSP-12.G.115)"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_25",
+   "fieldtype": "Check",
+   "label": "4) Bolt Torquing (BSP-12.G.104)"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_26",
+   "fieldtype": "Check",
+   "label": "5) Scaffolding"
+  },
+  {
+   "default": "0",
+   "fieldname": "data_27",
+   "fieldtype": "Check",
+   "label": "6) Pressure Testing (BSP-12.G.115/DEP 74.00.10.10-Gen)"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Data",
+   "label": "Approved by (LCMS HOD / DISCIPLINE LEAD):"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verify_by_asset",
+   "fieldtype": "Data",
+   "label": "Verify by Asset"
+  },
+  {
+   "fieldname": "section_break_32",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_33",
+   "fieldtype": "Table",
+   "options": "Construction 2 Table"
+  },
+  {
+   "fieldname": "remarkscomments",
+   "fieldtype": "Small Text",
+   "label": "Remarks/Comments"
+  },
+  {
+   "fieldname": "section_break_35",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "indicator",
+   "fieldtype": "Data",
+   "label": "Indicator"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach",
+   "label": "Signature"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-11 22:15:36.637994",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Construction Work Pack 2",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

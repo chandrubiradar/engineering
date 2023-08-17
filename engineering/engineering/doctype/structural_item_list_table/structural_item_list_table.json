@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-11 22:06:50.018205",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tag_nos",
+  "mark_nos",
+  "description",
+  "bsp12std09_10_attachment",
+  "final_coat",
+  "ral_no",
+  "qty",
+  "wt_kg",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "tag_nos",
+   "fieldtype": "Data",
+   "label": "TAG NOs"
+  },
+  {
+   "fieldname": "mark_nos",
+   "fieldtype": "Data",
+   "label": "MARK NOs"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "bsp12std09_10_attachment",
+   "fieldtype": "Data",
+   "label": "BSP12.STD.09-1.0 ATTACHMENT"
+  },
+  {
+   "fieldname": "final_coat",
+   "fieldtype": "Data",
+   "label": "FINAL COAT"
+  },
+  {
+   "fieldname": "ral_no",
+   "fieldtype": "Data",
+   "label": "RAL NO."
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "wt_kg",
+   "fieldtype": "Data",
+   "label": "WT (KG)"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "REMARKS"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-11 22:06:50.018205",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Structural Item List Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

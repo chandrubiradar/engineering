@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-11 22:00:34.812705",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "assembly_no",
+  "assembly_dascptlon",
+  "qty",
+  "total_weight_kg",
+  "fwo",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "assembly_no",
+   "fieldtype": "Data",
+   "label": "Assembly No"
+  },
+  {
+   "fieldname": "assembly_dascptlon",
+   "fieldtype": "Data",
+   "label": "Assembly Descriptlon"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "total_weight_kg",
+   "fieldtype": "Data",
+   "label": "Total Weight (KG)"
+  },
+  {
+   "fieldname": "fwo",
+   "fieldtype": "Data",
+   "label": "FWO"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-11 22:00:34.812705",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Structural Assembly Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

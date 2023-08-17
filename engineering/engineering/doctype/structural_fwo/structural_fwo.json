@@ -1,0 +1,119 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:FWO-{title}-{####}",
+ "creation": "2023-08-11 22:15:05.797886",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "doc_no",
+  "rev_no",
+  "contract_no",
+  "reference",
+  "location",
+  "column_break_6",
+  "equipment_no",
+  "date",
+  "won",
+  "won__sap__jobcard__si_no",
+  "fwo_no",
+  "section_break_11",
+  "text_12"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "Doc No"
+  },
+  {
+   "fieldname": "rev_no",
+   "fieldtype": "Data",
+   "label": "Rev. No."
+  },
+  {
+   "fieldname": "contract_no",
+   "fieldtype": "Data",
+   "label": "Contract No."
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "REFERENCE"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "LOCATION"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equipment_no",
+   "fieldtype": "Data",
+   "label": "EQUIPMENT NO."
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "DATE"
+  },
+  {
+   "fieldname": "won__sap__jobcard__si_no",
+   "fieldtype": "Data",
+   "label": "SAP / JOBCARD / SI No."
+  },
+  {
+   "fieldname": "fwo_no",
+   "fieldtype": "Data",
+   "label": "FWO NO."
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "text_12",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-14 19:21:24.328740",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Structural FWO",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

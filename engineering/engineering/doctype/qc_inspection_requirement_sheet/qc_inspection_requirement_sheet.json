@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:QC Inspection-{title}-{####}",
+ "creation": "2023-08-11 22:04:54.934181",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "reference",
+  "location",
+  "doc_no",
+  "column_break_4",
+  "won",
+  "rev",
+  "section_break_7",
+  "qc_template",
+  "qc_list",
+  "section_break_10",
+  "qc_requirement_specified",
+  "column_break_12",
+  "qc_completed_onsite_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "reference",
+   "fieldtype": "Data",
+   "label": "REFERENCE"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "LOCATION"
+  },
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "DOC NO."
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "Rev"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qc_template",
+   "fieldtype": "Link",
+   "label": "QC Template",
+   "options": "QC Inspection Template"
+  },
+  {
+   "fieldname": "qc_list",
+   "fieldtype": "Table",
+   "label": "QC List",
+   "options": "QC List"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qc_requirement_specified",
+   "fieldtype": "Table",
+   "label": "QC Requirement Specified",
+   "options": "QC Requirement Specified"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "qc_completed_onsite_table",
+   "fieldtype": "Table",
+   "label": "QC Completed Onsite Table",
+   "options": "QC Completed Onsite Table"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-14 19:12:03.767434",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "QC Inspection Requirement Sheet",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
