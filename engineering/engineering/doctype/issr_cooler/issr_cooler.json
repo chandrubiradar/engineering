@@ -1,0 +1,373 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:ISSR Cooler-{fn}-{####}",
+ "creation": "2023-08-11 21:28:14.182198",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "etsr",
+  "fn",
+  "won",
+  "column_break_6",
+  "location",
+  "equipment_number",
+  "date",
+  "column_break_8",
+  "discipline",
+  "cooler",
+  "section_break_12",
+  "exist_won",
+  "yes",
+  "no",
+  "if_yes_won",
+  "new_won",
+  "column_break_16",
+  "won_category",
+  "bas",
+  "dis",
+  "add",
+  "adhoc",
+  "data_22",
+  "cirass_report",
+  "yes1",
+  "no1",
+  "if_yes_ref_no",
+  "column_break_26",
+  "approved_lsci",
+  "yes2",
+  "no2",
+  "not_required",
+  "column_break_40",
+  "if_yes_ref_no1",
+  "column_break_42",
+  "attach",
+  "section_break_34",
+  "findings",
+  "section_break_36",
+  "recommendations",
+  "section_break_38",
+  "remarks_by_dwe_wptnpc",
+  "section_break_40",
+  "remarkss_by_bsp_site_representative_if_applicable_only",
+  "section_break_48",
+  "attach_image",
+  "section_break_42",
+  "name1",
+  "table_43",
+  "remarks_by_design_engineer_co_ordinator",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "etsr",
+   "fieldtype": "Data",
+   "label": "ETSR"
+  },
+  {
+   "fieldname": "fn",
+   "fieldtype": "Link",
+   "label": "FN",
+   "options": "Mashhor Campaign"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "fn.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "equipment_number",
+   "fieldtype": "Data",
+   "label": "Equipment Number"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "discipline",
+   "fieldtype": "Heading",
+   "label": "DISCIPLINE :"
+  },
+  {
+   "default": "1",
+   "fieldname": "cooler",
+   "fieldtype": "Check",
+   "label": "COOLER"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break",
+   "label": "WON DETAILS"
+  },
+  {
+   "fieldname": "exist_won",
+   "fieldtype": "Heading",
+   "label": "EXIST WON"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "YES"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "NO"
+  },
+  {
+   "depends_on": "eval:doc.yes == 1",
+   "fieldname": "if_yes_won",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "WON",
+   "mandatory_depends_on": "eval:doc.yes == 1",
+   "options": "Project",
+   "read_only": 1
+  },
+  {
+   "depends_on": "eval:doc.no == 1",
+   "fieldname": "new_won",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "NEW WON",
+   "mandatory_depends_on": "eval:doc.no == 1",
+   "options": "Project"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "won_category",
+   "fieldtype": "Heading",
+   "label": "WON CATEGORY"
+  },
+  {
+   "default": "0",
+   "fieldname": "bas",
+   "fieldtype": "Check",
+   "label": "1BAS"
+  },
+  {
+   "default": "0",
+   "fieldname": "dis",
+   "fieldtype": "Check",
+   "label": "3DIS"
+  },
+  {
+   "default": "0",
+   "fieldname": "add",
+   "fieldtype": "Check",
+   "label": "2ADD"
+  },
+  {
+   "default": "0",
+   "fieldname": "adhoc",
+   "fieldtype": "Check",
+   "label": "ADHOC"
+  },
+  {
+   "fieldname": "data_22",
+   "fieldtype": "Section Break",
+   "label": "REQUIRED DOCUMENTS"
+  },
+  {
+   "fieldname": "cirass_report",
+   "fieldtype": "Heading",
+   "label": "CIRASS REPORT"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes1",
+   "fieldtype": "Check",
+   "label": "YES"
+  },
+  {
+   "default": "0",
+   "fieldname": "no1",
+   "fieldtype": "Check",
+   "label": "NO"
+  },
+  {
+   "depends_on": "eval:doc.yes1 == 1",
+   "fieldname": "if_yes_ref_no",
+   "fieldtype": "Data",
+   "label": "REF NO",
+   "mandatory_depends_on": "eval:doc.yes1 == 1"
+  },
+  {
+   "fieldname": "column_break_26",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_lsci",
+   "fieldtype": "Heading",
+   "label": "APPROVED LSCI"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes2",
+   "fieldtype": "Check",
+   "label": "YES"
+  },
+  {
+   "default": "0",
+   "fieldname": "no2",
+   "fieldtype": "Check",
+   "label": "NO"
+  },
+  {
+   "default": "0",
+   "fieldname": "not_required",
+   "fieldtype": "Check",
+   "label": "Not Required"
+  },
+  {
+   "fieldname": "column_break_40",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.yes2 ==1",
+   "fieldname": "if_yes_ref_no1",
+   "fieldtype": "Data",
+   "label": "REF NO",
+   "mandatory_depends_on": "eval:doc.yes2 ==1"
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.yes2 ==1",
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach",
+   "mandatory_depends_on": "eval:doc.yes2 ==1"
+  },
+  {
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "findings",
+   "fieldtype": "Text",
+   "label": "FINDING(S)"
+  },
+  {
+   "fieldname": "section_break_36",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "recommendations",
+   "fieldtype": "Text",
+   "label": "RECOMMENDATIONS"
+  },
+  {
+   "fieldname": "section_break_38",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks_by_dwe_wptnpc",
+   "fieldtype": "Text",
+   "label": "REMARKS BY MGC WPT/WPC"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarkss_by_bsp_site_representative_if_applicable_only",
+   "fieldtype": "Text",
+   "label": "REMARKS(S) BY BSP SITE REPRESENTATIVE (IF APPLICABLE ONLY)"
+  },
+  {
+   "fieldname": "section_break_48",
+   "fieldtype": "Section Break",
+   "label": "Photo Attachment"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Table",
+   "label": "Attach Image",
+   "options": "ISSR Image Tablee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_42",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "63c40c8df3",
+   "fieldname": "name1",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Name",
+   "options": "ISSR Table Template"
+  },
+  {
+   "fieldname": "table_43",
+   "fieldtype": "Table",
+   "options": "ISSR TABLE"
+  },
+  {
+   "depends_on": "eval:doc.workflow_state == \"Send to Design Co-cordinator\"",
+   "fieldname": "remarks_by_design_engineer_co_ordinator",
+   "fieldtype": "Text",
+   "label": "Remarks by Design Engineer Co Ordinator",
+   "mandatory_depends_on": "eval:doc.workflow_state == \"Send to Design Co-cordinator\""
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "ISSR Cooler",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-14 20:29:26.347755",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "ISSR Cooler",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

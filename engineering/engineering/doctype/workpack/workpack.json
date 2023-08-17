@@ -1,0 +1,1039 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:WorkPack-{scope_of_work}-{####}",
+ "creation": "2023-08-11 22:18:50.344781",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doc_no",
+  "fn",
+  "location",
+  "won",
+  "rev",
+  "fwopiping",
+  "column_break_5",
+  "date",
+  "ref",
+  "shutdown",
+  "non_shutdown",
+  "data_6",
+  "yes",
+  "no",
+  "fwostructural",
+  "section_break_15",
+  "discipline_cross_reference",
+  "piping_wp",
+  "structural_wp",
+  "paco_wp",
+  "electrical_wp",
+  "tank",
+  "exchanger",
+  "cooler",
+  "vessel",
+  "relief_valve",
+  "note___",
+  "data_22",
+  "title",
+  "notes",
+  "column_break_24",
+  "scope_of_work",
+  "text_25",
+  "project_notes",
+  "safety_relife_valve_verification_section",
+  "data_30",
+  "pressure_relife_valve_no",
+  "set_pressure",
+  "size",
+  "column_break_34",
+  "on_site",
+  "relife_valve_no",
+  "set_pressue",
+  "size_",
+  "model",
+  "date_last_tested",
+  "column_break_41",
+  "execution___installed_relief_valve",
+  "relife_valve_no_",
+  "set_pressure_",
+  "size__",
+  "model_",
+  "date_last_tested_",
+  "special_instruction_section",
+  "hydro_test_pressure_kpag",
+  "based_on_design_pressure_kpag",
+  "column_break_49",
+  "execution_of_completion",
+  "completed",
+  "partial_completed",
+  "deferred",
+  "cancelled",
+  "start_on",
+  "finish_on",
+  "on",
+  "by",
+  "on_",
+  "by_",
+  "on__",
+  "by__",
+  "section_break_64",
+  "piping_class_hydrotest",
+  "long_lead_material_is_item_no",
+  "execution_of_manhours",
+  "estimate",
+  "actual",
+  "column_break_67",
+  "signature_of_execution_completion",
+  "lrmc_wss",
+  "lrmc_qc",
+  "aen3x_csr",
+  "op1qai4x",
+  "section_break_121",
+  "approved_by_hoddiscipline_lead",
+  "verify_by_asset",
+  "table_124",
+  "data_125",
+  "section_break_126",
+  "indicator",
+  "signature",
+  "date132",
+  "attachments_section",
+  "detailed_scope",
+  "fwo_assembly_list",
+  "qc_inspection_requirement_checklist",
+  "data_137",
+  "material_requisition",
+  "anomalies_report__photos_sap_extractlsciemail",
+  "bolt_torquing_checklist",
+  "data_141",
+  "plot_plan__piping_ga_hac_drawing",
+  "general_notes_for_isometrics_afc_isometric_dwg_std_dwg_sketch",
+  "data_144",
+  "equipment__instrument_nameplate_details",
+  "equipment_datasheet__vendor_dwg",
+  "mechanical_survey_checklist",
+  "column_break_148",
+  "execution_of_manhours1",
+  "estimate1",
+  "actual1",
+  "ie_no_of_pax_x_productive_75_x_duration",
+  "requirement_notea",
+  "painting_blasting_bsp_12s600",
+  "welding_ndt_bsp_12s601",
+  "hydro_test_waiver_bsp_12g115",
+  "bolt_torquing_bsp_12g104",
+  "scaff",
+  "pressure_testing_bsp12g115dep_74001010_gen",
+  "section_break_161",
+  "approved_by_lcms_hod__discipline_lead",
+  "column_break_163",
+  "verify_by_asset1",
+  "section_break_165",
+  "table_166",
+  "remarkscomments",
+  "section_break_168",
+  "indicator1",
+  "signature1",
+  "sign_img",
+  "column_break_172",
+  "date1",
+  "section_break_125",
+  "qc_inspection",
+  "fwo",
+  "mto",
+  "column_break_130",
+  "border_image",
+  "mto_2",
+  "item_list",
+  "assembly_list",
+  "bolt_torquing",
+  "section_break_136",
+  "tank_inspection",
+  "tank_inspection_isolation_requirements",
+  "tank_inspection_workpack_development_checklist_mechanical",
+  "cooler_inspection",
+  "cooler_inspection_isolation_requirements",
+  "cooler_inspection_workpack_development_checklist_mechanical",
+  "column_break_143",
+  "vessel_inspection",
+  "vessel_inspection_isolation_requirements",
+  "vessel_inspection_workpack_development_checklist_mechanical"
+ ],
+ "fields": [
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "DOC_No",
+   "length": 100
+  },
+  {
+   "fieldname": "fn",
+   "fieldtype": "Link",
+   "label": "FN",
+   "options": "Mashhor Campaign"
+  },
+  {
+   "fetch_from": "fn.location",
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location",
+   "length": 80
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "length": 80,
+   "options": "Project"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "REV"
+  },
+  {
+   "fieldname": "fwopiping",
+   "fieldtype": "Data",
+   "label": "FWO(Piping)",
+   "length": 80
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "ref",
+   "fieldtype": "Data",
+   "label": "Ref",
+   "length": 80
+  },
+  {
+   "default": "0",
+   "fieldname": "shutdown",
+   "fieldtype": "Check",
+   "label": "Shutdown"
+  },
+  {
+   "default": "0",
+   "fieldname": "non_shutdown",
+   "fieldtype": "Check",
+   "label": "Non Shutdown"
+  },
+  {
+   "fieldname": "data_6",
+   "fieldtype": "Select",
+   "label": "Red PAR/VAR/SAR",
+   "length": 80,
+   "options": "\nPAR\nVAR\nSAR"
+  },
+  {
+   "default": "0",
+   "fieldname": "yes",
+   "fieldtype": "Check",
+   "label": "Yes"
+  },
+  {
+   "default": "0",
+   "fieldname": "no",
+   "fieldtype": "Check",
+   "label": "No"
+  },
+  {
+   "fieldname": "fwostructural",
+   "fieldtype": "Data",
+   "label": "FWO(Structural)",
+   "length": 80
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "discipline_cross_reference",
+   "fieldtype": "Heading",
+   "label": "DISCIPLINE CROSS REFERENCE"
+  },
+  {
+   "default": "0",
+   "fieldname": "piping_wp",
+   "fieldtype": "Check",
+   "label": "PIPING WP"
+  },
+  {
+   "default": "0",
+   "fieldname": "structural_wp",
+   "fieldtype": "Check",
+   "label": "STRUCTURAL WP"
+  },
+  {
+   "default": "0",
+   "fieldname": "paco_wp",
+   "fieldtype": "Check",
+   "label": "PACO WP"
+  },
+  {
+   "default": "0",
+   "fieldname": "electrical_wp",
+   "fieldtype": "Check",
+   "label": "ELECTRICAL WP"
+  },
+  {
+   "default": "0",
+   "fieldname": "tank",
+   "fieldtype": "Check",
+   "label": "TANK"
+  },
+  {
+   "default": "0",
+   "fieldname": "exchanger",
+   "fieldtype": "Check",
+   "label": "EXCHANGER"
+  },
+  {
+   "default": "0",
+   "fieldname": "cooler",
+   "fieldtype": "Check",
+   "label": "COOLER"
+  },
+  {
+   "default": "0",
+   "fieldname": "vessel",
+   "fieldtype": "Check",
+   "label": "VESSEL"
+  },
+  {
+   "default": "0",
+   "fieldname": "relief_valve",
+   "fieldtype": "Check",
+   "label": "RELIEF VALVE"
+  },
+  {
+   "default": "DETAIL OF SCOPE OF WORK REFER TO SPECIFIC DISCIPLINE",
+   "fieldname": "note___",
+   "fieldtype": "Heading",
+   "label": "NOTE "
+  },
+  {
+   "default": "DETAIL OF SCOPE OF WORK REFER TO SPECIFIC DISCIPLINE",
+   "fieldname": "data_22",
+   "fieldtype": "Data",
+   "length": 80
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Small Text",
+   "label": "TITLE"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scope_of_work",
+   "fieldtype": "Link",
+   "label": "Scope of Work",
+   "options": "Discipline List"
+  },
+  {
+   "fieldname": "text_25",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "project_notes",
+   "fieldtype": "Text",
+   "hidden": 1,
+   "label": "Project Notes"
+  },
+  {
+   "fieldname": "safety_relife_valve_verification_section",
+   "fieldtype": "Section Break",
+   "label": "SAFETY RELIFE VALVE VERIFICATION"
+  },
+  {
+   "fieldname": "data_30",
+   "fieldtype": "Heading",
+   "label": "PEFS"
+  },
+  {
+   "fieldname": "pressure_relife_valve_no",
+   "fieldtype": "Data",
+   "label": "Pressure Relife Valve No",
+   "length": 80
+  },
+  {
+   "fieldname": "set_pressure",
+   "fieldtype": "Data",
+   "label": "Set Pressure",
+   "length": 80
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size",
+   "length": 80
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "on_site",
+   "fieldtype": "Heading",
+   "label": "ON SITE"
+  },
+  {
+   "fieldname": "relife_valve_no",
+   "fieldtype": "Data",
+   "label": "Relife Valve No",
+   "length": 80
+  },
+  {
+   "fieldname": "set_pressue",
+   "fieldtype": "Data",
+   "label": "Set Pressue",
+   "length": 80
+  },
+  {
+   "fieldname": "size_",
+   "fieldtype": "Data",
+   "label": "Size",
+   "length": 80
+  },
+  {
+   "fieldname": "model",
+   "fieldtype": "Data",
+   "label": "Model",
+   "length": 80
+  },
+  {
+   "fieldname": "date_last_tested",
+   "fieldtype": "Date",
+   "label": "Date Last Tested"
+  },
+  {
+   "fieldname": "column_break_41",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "execution___installed_relief_valve",
+   "fieldtype": "Heading",
+   "label": "EXECUTION _ INSTALLED RELIEF VALVE"
+  },
+  {
+   "fieldname": "relife_valve_no_",
+   "fieldtype": "Data",
+   "label": "Relife Valve No",
+   "length": 80
+  },
+  {
+   "fieldname": "set_pressure_",
+   "fieldtype": "Data",
+   "label": "Set Pressure",
+   "length": 80
+  },
+  {
+   "fieldname": "size__",
+   "fieldtype": "Data",
+   "label": "Size",
+   "length": 80
+  },
+  {
+   "fieldname": "model_",
+   "fieldtype": "Data",
+   "label": "Model",
+   "length": 80
+  },
+  {
+   "fieldname": "date_last_tested_",
+   "fieldtype": "Data",
+   "label": "Date Last Tested",
+   "length": 80
+  },
+  {
+   "fieldname": "special_instruction_section",
+   "fieldtype": "Section Break",
+   "label": "Special Instruction"
+  },
+  {
+   "fieldname": "hydro_test_pressure_kpag",
+   "fieldtype": "Data",
+   "label": "Hydro Test Pressure (kPag)"
+  },
+  {
+   "fieldname": "based_on_design_pressure_kpag",
+   "fieldtype": "Data",
+   "label": "Based On Design Pressure @ (kPag)"
+  },
+  {
+   "fieldname": "column_break_49",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "execution_of_completion",
+   "fieldtype": "Heading",
+   "label": "EXECUTION OF COMPLETION"
+  },
+  {
+   "default": "0",
+   "fieldname": "completed",
+   "fieldtype": "Check",
+   "label": "Completed"
+  },
+  {
+   "default": "0",
+   "fieldname": "partial_completed",
+   "fieldtype": "Check",
+   "label": "PARTIAL COMPLETED"
+  },
+  {
+   "default": "0",
+   "fieldname": "deferred",
+   "fieldtype": "Check",
+   "label": "DEFERRED"
+  },
+  {
+   "default": "0",
+   "fieldname": "cancelled",
+   "fieldtype": "Check",
+   "label": "CANCELLED"
+  },
+  {
+   "fieldname": "start_on",
+   "fieldtype": "Date",
+   "label": "Start On"
+  },
+  {
+   "fieldname": "finish_on",
+   "fieldtype": "Date",
+   "label": "Finish On"
+  },
+  {
+   "fieldname": "on",
+   "fieldtype": "Date",
+   "label": "On"
+  },
+  {
+   "fieldname": "by",
+   "fieldtype": "Date",
+   "label": "By"
+  },
+  {
+   "fieldname": "on_",
+   "fieldtype": "Date",
+   "label": "On"
+  },
+  {
+   "fieldname": "by_",
+   "fieldtype": "Date",
+   "label": "By"
+  },
+  {
+   "fieldname": "on__",
+   "fieldtype": "Date",
+   "label": "On"
+  },
+  {
+   "fieldname": "by__",
+   "fieldtype": "Date",
+   "label": "By"
+  },
+  {
+   "fieldname": "section_break_64",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "piping_class_hydrotest",
+   "fieldtype": "Data",
+   "label": "PIPING CLASS HYDROTEST",
+   "length": 80
+  },
+  {
+   "fieldname": "long_lead_material_is_item_no",
+   "fieldtype": "Data",
+   "label": "LONG LEAD MATERIAL IS ITEM NO",
+   "length": 80
+  },
+  {
+   "fieldname": "execution_of_manhours",
+   "fieldtype": "Heading",
+   "hidden": 1,
+   "label": "EXECUTION OF MANHOURS"
+  },
+  {
+   "fieldname": "estimate",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ESTIMATE",
+   "length": 80
+  },
+  {
+   "fieldname": "actual",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "ACTUAL",
+   "length": 80
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "signature_of_execution_completion",
+   "fieldtype": "Heading",
+   "label": "SIGNATURE OF EXECUTION COMPLETION"
+  },
+  {
+   "fieldname": "lrmc_wss",
+   "fieldtype": "Data",
+   "label": "LRMC WSS",
+   "length": 80
+  },
+  {
+   "fieldname": "lrmc_qc",
+   "fieldtype": "Data",
+   "label": "LRMC QC",
+   "length": 80
+  },
+  {
+   "fieldname": "aen3x_csr",
+   "fieldtype": "Data",
+   "label": "AEN/3X CSR",
+   "length": 80
+  },
+  {
+   "fieldname": "op1qai4x",
+   "fieldtype": "Data",
+   "label": "OP/1/QAI/4X",
+   "length": 80
+  },
+  {
+   "fieldname": "section_break_121",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "approved_by_hoddiscipline_lead",
+   "fieldtype": "Data",
+   "label": "Approved By (HOD/Discipline Lead)",
+   "length": 80
+  },
+  {
+   "fieldname": "verify_by_asset",
+   "fieldtype": "Data",
+   "label": "Verify by Asset",
+   "length": 80
+  },
+  {
+   "fieldname": "table_124",
+   "fieldtype": "Table",
+   "options": "Scope Table"
+  },
+  {
+   "default": "RETURN AS-BUILT WORK PACK AND OTHER SUPPORTING DATA TO AEN/7 CONSTRUCTION ENGINEER",
+   "fieldname": "data_125",
+   "fieldtype": "Text"
+  },
+  {
+   "fieldname": "section_break_126",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "indicator",
+   "fieldtype": "Data",
+   "label": "Indicator",
+   "length": 80
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Data",
+   "label": "Signature",
+   "length": 80
+  },
+  {
+   "fieldname": "date132",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "attachments_section",
+   "fieldtype": "Section Break",
+   "label": "Attachments"
+  },
+  {
+   "fieldname": "detailed_scope",
+   "fieldtype": "Data",
+   "label": "DETAILED SCOPE AND SEQUENCES OF WORK/ OAI REPORT/ EMAIL(STENCIL INFO)",
+   "length": 60
+  },
+  {
+   "fieldname": "fwo_assembly_list",
+   "fieldtype": "Data",
+   "label": "FWO/ ASSEMBLY LIST",
+   "length": 60
+  },
+  {
+   "fieldname": "qc_inspection_requirement_checklist",
+   "fieldtype": "Data",
+   "label": "QC INSPECTION REQUIREMENT CHECKLIST",
+   "length": 60
+  },
+  {
+   "fieldname": "data_137",
+   "fieldtype": "Data",
+   "label": "MTO LIST / SAP INPUT",
+   "length": 60
+  },
+  {
+   "fieldname": "material_requisition",
+   "fieldtype": "Data",
+   "label": "MATERIAL REQUISITION",
+   "length": 60
+  },
+  {
+   "fieldname": "anomalies_report__photos_sap_extractlsciemail",
+   "fieldtype": "Data",
+   "label": "ANOMALIES REPORT / PHOTO(s)/ SAP EXTRACT/LSCI/EMAIL",
+   "length": 60
+  },
+  {
+   "fieldname": "bolt_torquing_checklist",
+   "fieldtype": "Data",
+   "label": "BOLT TORQUING CHECKLIST",
+   "length": 60
+  },
+  {
+   "fieldname": "data_141",
+   "fieldtype": "Data",
+   "label": "MARKED-UP ELECTRICAL DWG/PEFS/UEFS"
+  },
+  {
+   "fieldname": "plot_plan__piping_ga_hac_drawing",
+   "fieldtype": "Data",
+   "label": "PLOT PLAN / PIPING G.A/ H.A.C DRAWING",
+   "length": 60
+  },
+  {
+   "fieldname": "general_notes_for_isometrics_afc_isometric_dwg_std_dwg_sketch",
+   "fieldtype": "Data",
+   "label": "GENERAL NOTES FOR ISOMETRICS/ AFC ISOMETRIC DWG/ STD DWG/ SKETCH",
+   "length": 80
+  },
+  {
+   "fieldname": "data_144",
+   "fieldtype": "Data",
+   "label": "ISOLATION REQUIREMENT SHEETS",
+   "length": 60
+  },
+  {
+   "fieldname": "equipment__instrument_nameplate_details",
+   "fieldtype": "Data",
+   "label": "EQUIPMENT / INSTRUMENT NAMEPLATE DETAILS",
+   "length": 60
+  },
+  {
+   "fieldname": "equipment_datasheet__vendor_dwg",
+   "fieldtype": "Data",
+   "label": "EQUIPMENT DATASHEET / VENDOR DWG",
+   "length": 80
+  },
+  {
+   "fieldname": "mechanical_survey_checklist",
+   "fieldtype": "Data",
+   "label": "MECHANICAL SURVEY CHECKLIST",
+   "length": 80
+  },
+  {
+   "fieldname": "column_break_148",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "execution_of_manhours1",
+   "fieldtype": "Heading",
+   "label": "EXECUTION OF MANHOURS"
+  },
+  {
+   "fieldname": "estimate1",
+   "fieldtype": "Float",
+   "label": "ESTIMATE"
+  },
+  {
+   "fieldname": "actual1",
+   "fieldtype": "Float",
+   "label": "ACTUAL"
+  },
+  {
+   "fieldname": "ie_no_of_pax_x_productive_75_x_duration",
+   "fieldtype": "Data",
+   "label": "(i.e. No. of pax X Productive 7.5 X Duration)"
+  },
+  {
+   "fieldname": "requirement_notea",
+   "fieldtype": "Heading",
+   "label": "REQUIREMENT (NOTE-A)"
+  },
+  {
+   "default": "0",
+   "fieldname": "painting_blasting_bsp_12s600",
+   "fieldtype": "Check",
+   "label": "1) Painting/ Blasting (BSP_12.S.600)"
+  },
+  {
+   "default": "0",
+   "fieldname": "welding_ndt_bsp_12s601",
+   "fieldtype": "Check",
+   "label": "2) Welding/ NDT (BSP-12.S.601)"
+  },
+  {
+   "default": "0",
+   "fieldname": "hydro_test_waiver_bsp_12g115",
+   "fieldtype": "Check",
+   "label": "3) Hydro test Waiver (BSP-12.G.115)"
+  },
+  {
+   "default": "0",
+   "fieldname": "bolt_torquing_bsp_12g104",
+   "fieldtype": "Check",
+   "label": "4) Bolt Torquing (BSP-12.G.104)"
+  },
+  {
+   "default": "0",
+   "fieldname": "scaff",
+   "fieldtype": "Check",
+   "label": "5) Scaffolding"
+  },
+  {
+   "default": "0",
+   "fieldname": "pressure_testing_bsp12g115dep_74001010_gen",
+   "fieldtype": "Check",
+   "label": "6) Pressure Testing (BSP-12.G.115/DEP 74.00.10.10 Gen)"
+  },
+  {
+   "fieldname": "section_break_161",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "approved_by_lcms_hod__discipline_lead",
+   "fieldtype": "Data",
+   "label": "Approved by (LCMS HOD / DISCIPLINE LEAD)"
+  },
+  {
+   "fieldname": "column_break_163",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verify_by_asset1",
+   "fieldtype": "Data",
+   "label": "Verify by Asset"
+  },
+  {
+   "fieldname": "section_break_165",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_166",
+   "fieldtype": "Table",
+   "options": "Construction 2 Table"
+  },
+  {
+   "fieldname": "remarkscomments",
+   "fieldtype": "Small Text",
+   "label": "Remarks/Comments"
+  },
+  {
+   "fieldname": "section_break_168",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "indicator1",
+   "fieldtype": "Data",
+   "label": "Indicator"
+  },
+  {
+   "fieldname": "signature1",
+   "fieldtype": "Attach",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "sign_img",
+   "fieldtype": "Image",
+   "label": "Sign Img",
+   "options": "signature1"
+  },
+  {
+   "fieldname": "column_break_172",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date1",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_125",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qc_inspection",
+   "fieldtype": "Link",
+   "label": "QC INSPECTION",
+   "options": "QC Inspection Requirement Sheet"
+  },
+  {
+   "depends_on": "eval:doc.structural_wp == 1 || doc.piping_wp == 1",
+   "fieldname": "fwo",
+   "fieldtype": "Link",
+   "label": "FWO",
+   "options": "Structural FWO"
+  },
+  {
+   "fieldname": "mto",
+   "fieldtype": "Link",
+   "label": "MTO",
+   "options": "Material Take Off"
+  },
+  {
+   "fieldname": "column_break_130",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "border_image",
+   "fieldtype": "Link",
+   "label": "Border Image",
+   "options": "Border Image"
+  },
+  {
+   "depends_on": "eval:doc.electrical_wp == 1 || doc.structural_wp == 1 || doc.paco_wp == 1",
+   "fieldname": "mto_2",
+   "fieldtype": "Link",
+   "label": "MTO 2",
+   "options": "Structural MTO2"
+  },
+  {
+   "depends_on": "eval:doc.structural_wp == 1",
+   "fieldname": "item_list",
+   "fieldtype": "Link",
+   "label": "Item List",
+   "options": "Structural Item List"
+  },
+  {
+   "depends_on": "eval:doc.structural_wp == 1 || doc.piping_wp == 1",
+   "fieldname": "assembly_list",
+   "fieldtype": "Link",
+   "label": "Assembly List",
+   "options": "Structural Assembly"
+  },
+  {
+   "depends_on": "eval:doc.piping_wp ==1 || doc.tank==1 || doc.cooler ==1 || doc.vessel == 1",
+   "fieldname": "bolt_torquing",
+   "fieldtype": "Link",
+   "label": "Bolt Torquing",
+   "options": "BOLT TORQUING"
+  },
+  {
+   "fieldname": "section_break_136",
+   "fieldtype": "Section Break"
+  },
+  {
+   "depends_on": "eval:doc.tank ==1",
+   "fieldname": "tank_inspection",
+   "fieldtype": "Link",
+   "label": "Tank Inspection",
+   "options": "Tank Inspection"
+  },
+  {
+   "depends_on": "eval:doc.tank ==1",
+   "fieldname": "tank_inspection_isolation_requirements",
+   "fieldtype": "Link",
+   "label": "Tank Inspection Isolation Requirements",
+   "options": "Tank Inspection Isolation Requirements"
+  },
+  {
+   "depends_on": "eval:doc.tank ==1",
+   "fieldname": "tank_inspection_workpack_development_checklist_mechanical",
+   "fieldtype": "Link",
+   "label": "Tank Inspection Workpack Development Checklist Mechanical",
+   "options": "Tank Inspection Workpack Development Checklist Mechanical"
+  },
+  {
+   "depends_on": "eval:doc.cooler ==1",
+   "fieldname": "cooler_inspection",
+   "fieldtype": "Link",
+   "label": "Cooler Inspection",
+   "options": "Cooler Inspection"
+  },
+  {
+   "depends_on": "eval:doc.cooler ==1",
+   "fieldname": "cooler_inspection_isolation_requirements",
+   "fieldtype": "Link",
+   "label": "Cooler Inspection Isolation Requirements",
+   "options": "Cooler Inspection Isolation Requirements"
+  },
+  {
+   "depends_on": "eval:doc.cooler ==1",
+   "fieldname": "cooler_inspection_workpack_development_checklist_mechanical",
+   "fieldtype": "Link",
+   "label": "Cooler Inspection Workpack Development Checklist Mechanical",
+   "options": "Cooler Inspection Workpack Development Checklist Mechanical"
+  },
+  {
+   "fieldname": "column_break_143",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.vessel ==1",
+   "fieldname": "vessel_inspection",
+   "fieldtype": "Link",
+   "label": "Vessel Inspection",
+   "options": "Vessel Inspection"
+  },
+  {
+   "depends_on": "eval:doc.vessel ==1",
+   "fieldname": "vessel_inspection_isolation_requirements",
+   "fieldtype": "Link",
+   "label": "Vessel Inspection Isolation Requirements",
+   "options": "Vessel Inspection Isolation Requirements"
+  },
+  {
+   "depends_on": "eval:doc.vessel==1",
+   "fieldname": "vessel_inspection_workpack_development_checklist_mechanical",
+   "fieldtype": "Link",
+   "label": "Vessel Inspection Workpack Development Checklist Mechanical",
+   "options": "Vessel Inspection Workpack Development Checklist Mechanical"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-11 22:18:50.344781",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Workpack",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

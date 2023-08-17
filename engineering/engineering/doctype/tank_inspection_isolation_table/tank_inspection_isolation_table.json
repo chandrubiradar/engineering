@@ -1,0 +1,83 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-11 21:36:30.854392",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nozzle_no",
+  "size_dn",
+  "rating",
+  "nozzle_description",
+  "isolation_on_date",
+  "isolation_on_by",
+  "isolation_off_date",
+  "isolation_off_by",
+  "action_required",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "nozzle_no",
+   "fieldtype": "Data",
+   "label": "Nozzle No"
+  },
+  {
+   "fieldname": "size_dn",
+   "fieldtype": "Data",
+   "label": "Size DN"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Data",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "nozzle_description",
+   "fieldtype": "Small Text",
+   "label": "Nozzle Description"
+  },
+  {
+   "fieldname": "isolation_on_date",
+   "fieldtype": "Date",
+   "label": "Isolation 'ON' Date"
+  },
+  {
+   "fieldname": "isolation_on_by",
+   "fieldtype": "Data",
+   "label": "Isolation 'ON' By"
+  },
+  {
+   "fieldname": "isolation_off_date",
+   "fieldtype": "Date",
+   "label": "Isolation 'OFF' Date"
+  },
+  {
+   "fieldname": "isolation_off_by",
+   "fieldtype": "Data",
+   "label": "Isolation 'OFF' By"
+  },
+  {
+   "fieldname": "action_required",
+   "fieldtype": "Data",
+   "label": "Action Required"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Data",
+   "label": "Comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-11 21:36:30.854392",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Tank Inspection Isolation Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

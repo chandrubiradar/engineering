@@ -1,0 +1,90 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-11 22:13:29.350524",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "drawing_no",
+  "dwgname",
+  "output_date",
+  "item",
+  "desc",
+  "sapcode",
+  "qty",
+  "unom",
+  "shop",
+  "field",
+  "input_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "label": "DRAWING NO."
+  },
+  {
+   "fieldname": "dwgname",
+   "fieldtype": "Data",
+   "label": "DWGNAME"
+  },
+  {
+   "fieldname": "output_date",
+   "fieldtype": "Date",
+   "label": "OUTPUT DATE"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "ITEM",
+   "options": "Item"
+  },
+  {
+   "fieldname": "desc",
+   "fieldtype": "Data",
+   "label": "DESC"
+  },
+  {
+   "fieldname": "sapcode",
+   "fieldtype": "Data",
+   "label": "SAPCODE"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "QTY"
+  },
+  {
+   "fieldname": "unom",
+   "fieldtype": "Data",
+   "label": "UNOM"
+  },
+  {
+   "fieldname": "shop",
+   "fieldtype": "Data",
+   "label": "SHOP"
+  },
+  {
+   "fieldname": "field",
+   "fieldtype": "Data",
+   "label": "FIELD"
+  },
+  {
+   "fieldname": "input_by",
+   "fieldtype": "Data",
+   "label": "INPUT BY"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-11 22:13:29.350524",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "MTO Tabel",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

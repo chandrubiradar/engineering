@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:MTO2-{title}-{####}",
+ "creation": "2023-08-11 22:11:27.793973",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "project",
+  "sap_network_no",
+  "doc_no",
+  "won",
+  "column_break_4",
+  "rev",
+  "date",
+  "issued_by",
+  "checked_by",
+  "section_break_9",
+  "table_10"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Data",
+   "label": "Project"
+  },
+  {
+   "fieldname": "sap_network_no",
+   "fieldtype": "Data",
+   "label": "SAP Network No"
+  },
+  {
+   "fieldname": "doc_no",
+   "fieldtype": "Data",
+   "label": "Doc No"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "REV"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "DATE"
+  },
+  {
+   "fieldname": "issued_by",
+   "fieldtype": "Data",
+   "label": "ISSUED BY"
+  },
+  {
+   "fieldname": "checked_by",
+   "fieldtype": "Data",
+   "label": "CHECKED BY"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_10",
+   "fieldtype": "Table",
+   "options": "Structural MTO2 Table"
+  },
+  {
+   "fieldname": "won",
+   "fieldtype": "Link",
+   "label": "WON",
+   "options": "Project"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-08-14 20:14:42.259888",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Structural MTO2",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
