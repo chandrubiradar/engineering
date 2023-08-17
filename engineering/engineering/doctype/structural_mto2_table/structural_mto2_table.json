@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-08-11 22:11:12.477274",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "sapmaterial_no",
+  "sap_material_description",
+  "unit_weight_mt",
+  "length_area_pieces_m__m2_pcs",
+  "sap_unit_of_measure",
+  "drawing_no",
+  "total_material_required_pcs_m",
+  "qty_ordered_sap",
+  "total_weight_mt",
+  "fab",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "sapmaterial_no",
+   "fieldtype": "Data",
+   "label": "SAPMaterial No"
+  },
+  {
+   "fieldname": "sap_material_description",
+   "fieldtype": "Text",
+   "label": "SAP Material Description"
+  },
+  {
+   "fieldname": "unit_weight_mt",
+   "fieldtype": "Data",
+   "label": "Unit Weight (MT)"
+  },
+  {
+   "fieldname": "length_area_pieces_m__m2_pcs",
+   "fieldtype": "Data",
+   "label": "Length/Area/Pieces/m /m2 pcs"
+  },
+  {
+   "fieldname": "sap_unit_of_measure",
+   "fieldtype": "Data",
+   "label": "SAP Unit of Measure"
+  },
+  {
+   "fieldname": "drawing_no",
+   "fieldtype": "Data",
+   "label": "DRAWING NO"
+  },
+  {
+   "fieldname": "total_material_required_pcs_m",
+   "fieldtype": "Data",
+   "label": "Total Material Required (Pcs/ m)"
+  },
+  {
+   "fieldname": "qty_ordered_sap",
+   "fieldtype": "Data",
+   "label": "Qty Ordered (SAP)"
+  },
+  {
+   "fieldname": "total_weight_mt",
+   "fieldtype": "Data",
+   "label": "Total Weight (MT)"
+  },
+  {
+   "fieldname": "fab",
+   "fieldtype": "Data",
+   "label": "Fab"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Text",
+   "label": "Remarks"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2023-08-11 22:11:12.477274",
+ "modified_by": "Administrator",
+ "module": "Engineering",
+ "name": "Structural MTO2 Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
